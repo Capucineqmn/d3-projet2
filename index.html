@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blueprint: Zoom Slider</title>
+	<meta name="description" content="A simple content slider with depth-like zoom functionality" />
+	<meta name="keywords" content="blueprint, template, slider, zoom, javascript, depth, 3d, css" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Feather Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/feather/style.css">
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<span>LION <span class="bp-icon bp-icon-about" data-content="The Blueprints are a collection of basic and minimal website concepts, components, plugins and layouts with minimal style for easy adaption and usage, or simply for inspiration."></span></span>
+			<h1>Le Lion Endormi </h1>
+			<nav>
+				<a href="http://tympanus.net/Blueprints/FilterableProductGrid/" class="bp-icon bp-icon-prev" data-info="Le Lion est mort ce soir"><span>Previous Blueprint</span></a>
+				<!--a href="" class="bp-icon bp-icon-next" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+				<a href="http://tympanus.net/codrops/?p=24330" class="bp-icon bp-icon-drop" data-info="Encyclopédie Lion"><span>back to the Codrops article</span></a>
+				<a href="http://tympanus.net/codrops/category/blueprints/" class="bp-icon bp-icon-archive" data-info="Poèmes Lion"><span>Go to the archive</span></a>
+			</nav>
+		</header>
+		<!-- Grid -->
+		<section class="slider">
+			<div class="slide slide--current" data-content="content-1">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/lion1.jpg" alt="iPhone" />
+						<div class="preview">
+
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>King</span> Lion Ténébreux</h2>
+			</div>
+			<div class="slide" data-content="content-2">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/lion13.jpg" alt="iPad Mini" />
+						<div class="preview">
+
+							<div class="zoomer__area zoomer__area--size-4"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>King</span> Polaroïd </h2>
+			</div>
+			<div class="slide" data-content="content-3">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/lion11.jpg" alt="MacBook" />
+						<div class="preview">
+
+							<div class="zoomer__area zoomer__area--size-3"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>King</span> Savane</h2>
+			</div>
+			<div class="slide" data-content="content-4">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/lion8.jpg" alt="iMac" />
+						<div class="preview">
+
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>King</span> Crinière au Vent</h2>
+			</div>
+			<div class="slide" data-content="content-5">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/lion5.jpg" alt="Apple Watch" />
+						<div class="preview rounded">
+
+							<div class="zoomer__area zoomer__area--size-1"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>King</span> Lion Blanc </h2>
+			</div>
+			<nav class="slider__nav">
+				<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Previous product</span></button>
+				<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View details</span></button>
+				<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">Next product</span></button>
+			</nav>
+		</section>
+		<!-- /slider-->
+		<section class="content">
+			<div class="content__item" id="content-1">
+				<img class="content__item-img rounded-right" src="images/lio.jpg" alt="Apple Watch Content" />
+				<div class="content__item-inner">
+					<h2>LION</h2>
+					<h3>The Lion King</h3>
+					<p>Le lion est un animal feroce.Le lion est une espèce de mammifères carnivores de la famille des félidés. La femelle du lion est la lionne, son petit est le lionceau.</p>
+					<p><a href="https://fr.vikidia.org/wiki/Lion">Pour tout apprendre sur les lions &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-2">
+				<img class="" src="images/po.jpg" alt="iPad Mini Content" />
+				<div class="content__item-inner">
+					<h2>LION</h2>
+					<h3>Poème sur les lions</h3>
+					<p>Tes yeux sont si profonds qu'en me penchant pour boire
+J'ai vu tous les soleils y venir se mirer
+S'y jeter à mourir tous les désespérés
+Tes yeux sont si profonds que j'y perds la mémoire
+
+À l'ombre des oiseaux c'est l'océan troublé
+Puis le beau temps soudain se lève et tes yeux changent
+L'été taille la nue au tablier des anges
+Le ciel n'est jamais bleu comme il l'est sur les blés
+Read more at http://www.dico-poesie.com/poemes.php?mot=lion#7CKuqHKaZmAjACrM.99.</p>
+					<p><a href="http://www.dico-poesie.com/poemes.php?mot=lion">Lire un poème sur les lions &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-3">
+				<img class="content__item-img rounded-right" src="images/en.jpg" alt="MacBook Content" />
+				<div class="content__item-inner">
+					<h2>Lion </h2>
+					<h3>Encyclopédie du lion</h3>
+					<p>Les lions sont les seuls félins à vivre en groupe social. Les rares individus solitaires sont presque toujours des lions âgés, blessés ou malades.
+Contrairement à d'autres sociétés animales très hiérarchisées, les lions et les lionnes d'une même troupe jouissent de droits égaux et fondent leur survie sur des liens étroits. Ils passent la majorité de leur existence en parfaite harmonie avec leurs compagnons. Ce n'est qu'au moment du partage des proies que se manifeste une dominance des mâles, plus forts, sur les femelles..</p>
+					<p><a href="https://www.larousse.fr/encyclopedie/vie-sauvage/lion/178160">L'Encyclopédie du lion &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-4">
+				<img class="content__item-img rounded-right" src="images/salvador.jpg" alt="iMac Content" />
+				<div class="content__item-inner">
+					<h2>LION</h2>
+					<h3>"Le lion est Mort ce soir" Henri Salvador</h3>
+					<p>Dans la jungle, terrible jungle
+Le lion est mort ce soir
+Et les hommes tranquilles s'endorment
+Le lion est mort ce soir
+Tout est sage dans le village
+Le lion est mort ce soir
+Plus de rage, plus de carnage
+Le lion est mort ce soir.</p>
+					<p><a href="https://www.paroles-musique.com/paroles-Le_Roi_Lion-Le_Lion_Est_Mort_Ce_Soir-lyrics,p42404">paroles le lion est mort ce soir &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-5">
+				<img class="content__item-img rounded-right" src="images/lionn.jpg" alt="Apple Watch Content" />
+				<div class="content__item-inner">
+					<h2>LIONNE</h2>
+					<h3>La lionne chasseuse</h3>
+					<p>Le lion (Panthera leo) a longtemps été vu comme un fainéant. Le roi des animaux ne chasse pas, il laisse ses lionnes s'en charger. Lui, il combat les prédateurs qui oseraient menacer la troupe. Cette vision du félidé serait pourtant complètement erronée. Le lion ne serait pas tributaire de la chasse des lionnes. Il serait même plutôt un bon chasseur. C'est du moins ce que suggère une équipe de recherche dans un article paru dans la revue Animal Behaviour.
+. </p>
+					<p><a href="https://www.futura-sciences.com/planete/actualites/zoologie-lion-nest-pas-si-faineant-il-chasse-aussi-bien-lionne-45347/">Le lion chasse la lionne dor &xrarr;</a></p>
+				</div>
+			</div>
+			<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close content</span></button>
+		</section>
+	</div>
+	<script src="js/classie.js"></script>
+	<script src="js/dynamics.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
